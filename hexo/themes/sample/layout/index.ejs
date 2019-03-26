@@ -7,8 +7,8 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link active" href="#profile">Profile</a>
-          <a class="nav-item nav-link" href="#skills">Features</a>
-          <a class="nav-item nav-link" href="#works">Pricing</a>
+          <a class="nav-item nav-link" href="#skills">Skills</a>
+          <a class="nav-item nav-link" href="#works">Works</a>
           <a class="nav-item nav-link" href="#contact">Contact</a>
         </div>
       </div>
@@ -16,7 +16,8 @@
 </div>
 <div class="container-fluid"> 
   <div class="row main-wrapper">
-      <div id="profile" class="article offset-sm-1 col-sm-10">   
+    <div class="offset-sm-1 col-sm-10 main-content">
+      <div id="profile" class="article">   
         <h1>Profile</h1>     
         index    <br>
         index    <br>
@@ -30,21 +31,23 @@
         index    <br>
         index    <br>
       </div>
-      <div id="skills" class="article offset-sm-1 col-sm-10">
+      <div id="skills" class="article">
         <h1>Skills</h1>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
+          <% for (var skill of site.data.index['skills']) { %>
+            <div class="card">
+              <h3><%= skill.label %></h3>
+              <table class="table">
+                <% for (var item of skill.list) { %>
+                  <tr>
+                    <td><%= item.label %></td>
+                    <td><%= item.term %></td>
+                    <td><%= item.description %></td>
+                  </tr>
+                <% } %>
+            </div>
+          <% } %> 
       </div>    
-      <div id="works" class="article offset-sm-1 col-sm-10">
+      <div id="works" class="article">
         <h1>Works</h1>
         index    <br>
         index    <br>
@@ -58,7 +61,7 @@
         index    <br>
         index    <br>
       </div>    
-      <div id="contact" class="article offset-sm-1 col-sm-10">
+      <div id="contact" class="article">
         <h1>Contact</h1>
         index    <br>
         index    <br>
@@ -71,7 +74,8 @@
         index    <br>
         index    <br>
         index    <br>
-      </div>    
+      </div>
+    </div>
   </div>
 </div>
         

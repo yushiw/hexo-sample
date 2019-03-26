@@ -1,0 +1,27 @@
+skills:
+  - key: backend
+    label: バックエンド
+    list: 
+      - key: php
+        label: PHP
+        term: 1年
+        description: Laravelを通じての学習。
+      - key: laravel
+        label: Laravel
+        term: 1年
+        description: Webページのバックエンド、iOSアプリのサーバサイドなどの実装
+      - key: sql
+        label: SQL
+        term: 1年
+        description: Laravelを通じての学習。簡単なDBの確認は、mysql-cli等を利用
+  - key: frontend
+    label: フロントエンド
+    list:
+      - key: vue-js
+        label: Vue.js
+        term: 半年
+        description: フロントエンドはbladeテンプレート + Vueコンポーネントで実装
+      - key: hexo
+        label: HEXO
+        term: Starting now!
+        description: はじめてののポートフォリオ製作
