@@ -1,3 +1,22 @@
+profile:
+  text: 関西でWebエンジニアをしています。趣味は音楽、ギターです。ご飯を食べるのが好きです。
+  history:
+    label: 経歴
+    list: 
+      - label: 大阪大学/大阪大学大学院
+        started_in: 2011/04
+        finished_in: 2017/03
+        description: 
+          - プログラミング等の学習、コミュニケーションロボットの研究
+      - label: 株式会社Silett 取締役
+        description: 
+          - 雑談対話システム開発（iOS/swift, Line Messaging API)
+        started_in: 2016/12
+        finished_in: 2017/12
+      - label: 小規模SIer プログラマ
+        description: Web業務システム、iOSアプリの受託開発
+        started_in: 2018/01
+
 skills:
   - key: backend
     label: バックエンド
@@ -17,7 +36,7 @@ skills:
   - key: frontend
     label: フロントエンド
     list:
-      - key: vue-js
+      - key: vuejs
         label: Vue.js
         term: 半年
         description: フロントエンドはbladeテンプレート + Vueコンポーネントで実装
@@ -25,3 +44,32 @@ skills:
         label: HEXO
         term: Starting now!
         description: はじめてののポートフォリオ製作
+  - key: smartphone
+    label: スマホアプリ
+    list:
+      - key: ios
+        label: iOS/swift
+        term: 3ヶ月
+        description: 
+
+  - key: languages
+    label: プログラミング言語
+    list:
+      - key: python
+        label: Python
+        term: 1年
+        description: 大学の研究で、心拍計算スクリプトを製作
+      - key: java
+        label: Java
+        term: 1年
+        description: 大学の研究で、コミュニケーションロボットの挙動操作プログラムを製作
+      - key: c-++
+        label: C/C++ 
+        term: 3ヶ月
+        description: プログラミングの学習・大学の研究で、コミュニケーションロボットの挙動操作プログラムを製作
+
+works:
+  - key: portfolio
+    label: ポートフォリオサイト
+    url: http://~~
+    description: 本サイト。フロントエンドの勉強を兼ねて製作中。

@@ -1,0 +1,10 @@
+<div class="skill_card">
+  <h3><%= skill.label %></h3>
+  <table class="table">
+    <% for (var item of skill.list) { %>
+      <tr>
+        <td><%= item.label %></td>
+        <td><%= item.term %></td>
+      </tr>
+    <% } %>
+</div>

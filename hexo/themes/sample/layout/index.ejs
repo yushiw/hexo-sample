@@ -18,62 +18,32 @@
   <div class="row main-wrapper">
     <div class="offset-sm-1 col-sm-10 main-content">
       <div id="profile" class="article">   
-        <h1>Profile</h1>     
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
+        <h1>Profile</h1>
+        <div class="profile-text">
+          <p><%= site.data.index['profile']['text'] %></p>
+        </div>
+        <h3>経歴</h3>
+        <div class="row">
+          <%- partial('_partial/history', {history: site.data.index['profile']['history']}) %>
+        </div>
       </div>
-      <div id="skills" class="article">
+      <div id="skills" class="article">        
         <h1>Skills</h1>
+        <div class="skill_sheets row">
           <% for (var skill of site.data.index['skills']) { %>
-            <div class="card">
-              <h3><%= skill.label %></h3>
-              <table class="table">
-                <% for (var item of skill.list) { %>
-                  <tr>
-                    <td><%= item.label %></td>
-                    <td><%= item.term %></td>
-                    <td><%= item.description %></td>
-                  </tr>
-                <% } %>
-            </div>
+            <%- partial('_partial/skill_card', {skill: skill}) %>
           <% } %> 
+        </div>
       </div>    
       <div id="works" class="article">
         <h1>Works</h1>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
+        <% for (var work of site.data.index['works']) { %>
+          <%- partial('_partial/work_card', {work: work}) %>
+        <% } %>
       </div>    
       <div id="contact" class="article">
         <h1>Contact</h1>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
-        index    <br>
+        coming soon...
       </div>
     </div>
   </div>

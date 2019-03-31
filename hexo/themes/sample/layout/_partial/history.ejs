@@ -1,0 +1,11 @@
+<div class="history">
+  <table class="table table-striped">
+    <% for (var row of history.list) { %>
+      <tr>
+        <td><%= row.started_in + ' ~ ' + (row.finished_in ? row.finished_in : '現在') %></td>
+        <td><%= row.label %></td>
+        <td><%= row.description %></td>
+      </tr>
+    <% } %>     
+  </table> 
+</div>
