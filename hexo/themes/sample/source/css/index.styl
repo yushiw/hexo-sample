@@ -1,15 +1,30 @@
+$maincolor = #711;
+$basecolor = #fee;
+$black = #555;
+
 @import "_partial/*"
 .main-wrapper {
   padding: 40px 0;
-  background-color: #fcc;
+  background-color: $basecolor;
   .article {
     padding: 40px 40px;
     margin: 40px 40px;
     background-color: #fff;
-    #skills {
-      .card {
-          background-color: green;
-      }
-    }
+  }
+}
+* {
+  color: $black;
+  h1 {
+    color: $maincolor;
+  }
+}
+
+.table-striped {
+  tbody tr:nth-of-type(odd) {
+    background-color: $basecolor;
+  }
+  th,
+  td {
+    border-color: #fff;
   }
 }
