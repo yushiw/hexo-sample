@@ -11,20 +11,32 @@ $black = #555;
     margin: 40px 40px;
     background-color: #fff;
   }
+  h1 {
+    padding: 20px;
+    text-align: center;    
+  }
+  h3 {
+    color: $maincolor
+    text-align: center;
+    padding: 0 10px;
+  }
+  h3::before {
+    content: "- "    
+  }
+  h3::after {
+    content: " -"
+  }
 }
 * {
   color: $black;
   h1 {
     color: $maincolor;
   }
-}
-
-.table-striped {
-  tbody tr:nth-of-type(odd) {
-    background-color: $basecolor;
-  }
-  th,
-  td {
-    border-color: #fff;
+  .table {
+    th,
+    td {
+      border-color: $basecolor;
+    }
+    border-bottom: solid 1px $basecolor;
   }
 }

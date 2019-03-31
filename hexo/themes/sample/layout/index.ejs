@@ -1,13 +1,15 @@
 <%- partial('_partial/navbar') %>
 <div class="container-fluid"> 
   <div class="row main-wrapper">
-    <div class="offset-sm-1 col-sm-10 main-content">
+    <div class="main-content">
       <div id="profile" class="article">   
         <h1>Profile</h1>
         <div class="profile-text">
           <p><%= site.data.index['profile']['text'] %></p>
         </div>
-        <h3>経歴</h3>
+      </div>
+      <div id="history" class="article">
+        <h1>History</h1>
         <div class="row">
           <%- partial('_partial/history', {history: site.data.index['profile']['history']}) %>
         </div>
