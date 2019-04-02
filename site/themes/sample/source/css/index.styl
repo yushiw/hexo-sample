@@ -11,6 +11,13 @@ $black = #555;
     margin: 40px 40px;
     background-color: #fff;
   }
+ 
+  @media all and (max-width: 600px) {
+    .article {
+      padding: 1rem 0;
+      margin: 1rem;
+    }
+  }
   h1 {
     padding: 20px;
     text-align: center;    
@@ -27,8 +34,14 @@ $black = #555;
     content: " -"
   }
 }
+body {
+  width: 100%;
+}
 * {
   color: $black;
+  margin: 0;
+  padding: 0;
+  max-width: 100%; 
   h1 {
     color: $maincolor;
   }
@@ -38,5 +51,8 @@ $black = #555;
       border-color: $basecolor;
     }
     border-bottom: solid 1px $basecolor;
+  }
+  ul {
+    list-style: none;
   }
 }

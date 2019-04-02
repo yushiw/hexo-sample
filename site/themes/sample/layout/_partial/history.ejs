@@ -1,11 +1,21 @@
 <div class="history">
-  <table class="table">
+  <div class="history-content">
     <% for (var row of history.list) { %>
-      <tr>
-        <td><%= row.started_in + ' ~ ' + (row.finished_in ? row.finished_in : '現在') %></td>
-        <td><%= row.label %></td>
-        <td><%= row.description %></td>
-      </tr>
+      <div class="history-item">        
+        <div class="history-left">
+          <div class="history-term">
+            <%= row.started_in + ' ~ ' + (row.finished_in ? row.finished_in : '現在') %>
+          </div>
+        </div>
+        <div class="history-right">
+          <div class="history-label">
+            <%= row.label %>
+          </div>
+          <div class="history-text">
+            <%= row.description %>
+          </div>
+        </div>
+      </div>
     <% } %>     
-  </table> 
+  </div>
 </div>

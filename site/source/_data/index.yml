@@ -1,5 +1,8 @@
 profile:
-  text: 関西でWebエンジニアをしています。趣味は音楽、ギターです。ご飯を食べるのが好きです。
+  texts: 
+    - 関西でWebエンジニアをしています。
+    - 趣味は音楽、ギターです。
+    - ご飯を食べるのが好きです。
   history:
     label: 経歴
     list: 
@@ -71,5 +74,5 @@ skills:
 works:
   - key: portfolio
     label: ポートフォリオサイト
-    url: http://~~
+    url: http://yushiw.github.io
     description: 本サイト。フロントエンドの勉強を兼ねて製作中。

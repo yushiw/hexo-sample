@@ -1,12 +1,18 @@
-<div class="skill_card">
+<div class="skill-cards">
   <h3><%= skill.label %></h3>
-  <table class="table">
+  <ul class="skill-item-list">
     <% for (var item of skill.list) { %>
-      <tr>
-        <td><%= item.label %></td>
-        <td><%= item.term %></td>
-        <td><%= item.description %></td>
-      </tr>
+      <li class="skill-item">
+        <div class="skill-item-top">
+          <h4><%= item.label %></h4>
+          <p class="skill-item-term">
+            <%= item.term %>
+          </p>
+        </div>
+        <div class="skill-item-bottom">
+          <p><%= item.description %></p> 
+        </div>
+      </li>
     <% } %>
-  </table>
+  </ul>
 </div>
