@@ -1,0 +1,4 @@
+---
+title: Skill
+type: skill
+---
